@@ -18,26 +18,6 @@ portfolio/
   css/style.css
   js/main.js
 ```
-
-## Before you submit: replace the placeholders
-Search the project for these and put in your own details.
-- `Your Name` (page titles, header, footer, headings) and the `YN` / `Y` initials
-- `you@example.com` (also the `data-email` attribute on the form), phone, city in `contact.html`
-- `your-username` in the GitHub and LinkedIn links (every page footer + project links)
-- Text inside square brackets, like `[Your University]`, in `about.html`
-- Sample projects in `index.html` and `projects.html` (keep the chat app, it is your real project)
-- Optional: add `images/me.jpg` and swap the `about-photo` div for an `<img>`
-
-## Run locally
-Open `index.html` in a browser, or use the VS Code "Live Server" extension.
-
-## Deploy on Netlify
-1. Push the folder to a GitHub repository.
-2. Netlify: Add new site, Import an existing project, pick the repo.
-3. Build command: leave empty. Publish directory: `.` (the repo root). Deploy.
-
-Quick alternative: drag and drop the folder at https://app.netlify.com/drop
-
 ## Features
 - Dark / light theme toggle (remembers the choice)
 - Project filter on the Projects page
