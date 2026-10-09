@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script>
+    // set the theme before first paint so dark mode doesn't flash
+    try {
+      document.documentElement.dataset.theme = localStorage.getItem("theme") ||
+        (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    } catch (e) {}
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | MUHAMMAD RAHIM</title>
+  <meta name="description" content="Background, skills and education of Your Name, a full-stack web developer.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2216%22 fill=%22%231f4fd8%22/><text x=%2250%22 y=%2272%22 font-size=%2262%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22Georgia%22>Y</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;600&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">MUHAMMAD RAHIM<span>.</span></a>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" aria-label="Switch to dark theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-title">
+      <div class="container">
+        <h1>About me</h1>
+        <p>A bit about how I got into web development and what I'm working on now.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container about-grid">
+        <!-- To use a real photo, replace this div with: <img src="images/me.jpg" alt="Your Name"> -->
+        <div class="about-photo" aria-hidden="true">YN</div>
+
+        <div>
+          <h2>Hi, I'm Your Name</h2>
+          <p>
+            I'm a [Computer Science] student who enjoys turning ideas into working web
+            applications. I started with plain HTML and CSS, and moved on to JavaScript when I
+            wanted pages to react to the people using them. Today I build complete apps with
+            React on the front end and Node.js with MongoDB on the back end.
+          </p>
+          <p>
+            My favourite project so far is a real-time chat app. Getting messages, typing
+            indicators and online status to stay in sync taught me more about how the web works
+            than any tutorial did.
+          </p>
+          <p>
+            Outside of coding I [read about new frameworks, play cricket, and try to keep my
+            GitHub green]. Replace this sentence with something that is true for you.
+          </p>
+          <div class="btn-row">
+            <a class="btn" href="contact.html">Work with me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--white">
+      <div class="container">
+        <h2>Skills</h2>
+        <p class="section__intro">What I use day to day, and what I'm comfortable doing with it.</p>
+
+        <dl class="skill-list">
+          <div>
+            <dt>HTML and CSS</dt>
+            <dd>Semantic markup, Flexbox, Grid, mobile-first responsive layouts.</dd>
+          </div>
+          <div>
+            <dt>JavaScript</dt>
+            <dd>ES6+, DOM scripting, async code with fetch and promises.</dd>
+          </div>
+          <div>
+            <dt>React</dt>
+            <dd>Components, hooks, context, routing, and calling APIs from the UI.</dd>
+          </div>
+          <div>
+            <dt>Node.js and Express</dt>
+            <dd>REST APIs, authentication with JWT, input validation.</dd>
+          </div>
+          <div>
+            <dt>MongoDB</dt>
+            <dd>Schema design with Mongoose, queries and basic indexing.</dd>
+          </div>
+          <div>
+            <dt>Git and deployment</dt>
+            <dd>Branches and pull requests, hosting on Netlify and Railway.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Education and experience</h2>
+        <p class="section__intro">Replace the entries below with your own details.</p>
+
+        <ol class="timeline">
+          <li>
+            <h3>BS Computer Science</h3>
+            <span class="when">[Your University], [2022] to [2026]</span>
+            <p>Coursework in data structures, databases and web technologies.</p>
+          </li>
+          <li>
+            <h3>Web Development Intern</h3>
+            <span class="when">[Company or program name], [month year] to [month year]</span>
+            <p>Building and deploying web projects as part of a guided program.</p>
+          </li>
+          <li>
+            <h3>Self-taught projects</h3>
+            <span class="when">[2023] to now</span>
+            <p>Built a chat app, a weather dashboard and a task manager API to practise full-stack skills.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </main>
+ <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> MUHAMMAD RAHIM</p>
+      <ul>
+        <li><a href="https://github.com/MUHAMMAD-RAHIM-SIDDIQUI" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/muhammad-rahim-siddiqui-4a539a3a0/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="mailto:rahim.siddiqui.dev@gmail.com">Email</a></li>
+      </ul>
+    </div>
+  </footer>
+ 
+</body>
+</html>
